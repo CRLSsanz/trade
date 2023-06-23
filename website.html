@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade</title>
+    <link rel="icon" href="./assets/cs-favicon.png" />
+
+    <!-- Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Estilos-->
+    <style>
+      /* fuente para numeros*/
+      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+      /*para letras son separadas*/
+      @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #222;
+        font-family: "Raleway", sans-serif;
+        color: #ddd;
+        font-size: 16px;
+        height: 100vh;
+        background-image: url("./assets/panal1.jpg");
+        background-size: cover;
+        background-position: 25% 0;
+        background-attachment: fixed;
+      }
+      .text-num {
+        font-family: "Inter", sans-serif;
+      }
+      @media (max-width: 1400px) {
+        body {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body class="">
+    <header
+      class="bg-[#75757550] h-12 flex items-center px-4 uppercase font-bold tracking-widest"
+    >
+      <div class="w-40">LOGO</div>
+      <div class="w-full flex justify-end md:justify-between">
+        <div class="normal-case hidden md:flex flex-row gap-12">
+          <div>Trade</div>
+          <div>Convert</div>
+          <div>Terms of Use</div>
+          <div>Privacy Policy</div>
+        </div>
+        <div>Login</div>
+      </div>
+    </header>
+    <main class="h-[calc(100%-100px)]">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
+        <div class="flex flex-col justify-between h-[calc(100vh-100px)]">
+          <div class="mt-5 p-4">
+            <div class="p-4">Overview</div>
+            <div class="p-4">Convert</div>
+            <div class="p-4">Staking</div>
+            <br />
+            <div class="p-4">Transactions</div>
+            <div class="p-4">Transfer</div>
+          </div>
+          <div>
+            <button
+              class="mt-3 bg-[#ff5709b6] p-2 w-full font-semibold rounded-full"
+            >
+              Withdraw
+            </button>
+            <button
+              class="mt-3 border bg-transparent p-2 w-full font-semibold rounded-full"
+            >
+              Withdraw New
+            </button>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="bg-[#75757550xx] w-full p-4">
+            <h1 class="text-3xl py-4">Overview</h1>
+            <h1 class="py-2">Total balance</h1>
+            <h1 class="py-2 text-num text-2xl flex items-center">
+              0.3332694 &nbsp;
+              <span class="text-sm p-2 bg-pink-500 rounded-lg"> BTC</span>
+            </h1>
+            <h1 class="py-2 text-num">$10,026.76</h1>
+            <br />
+            <br />
+            <h1 class="py-2">Total balance</h1>
+            <h1 class="py-2 font-semibold">Spot</h1>
+            <br />
+            <br />
+            <div class="w-full flex gap-2">
+              <button
+                class="mt-3 border bg-transparent p-2 w-1/2 font-semibold rounded-full"
+              >
+                Deposit
+              </button>
+              <br />
+              <button
+                class="mt-3 border bg-transparent p-2 w-1/2 font-semibold rounded-full"
+              >
+                Transfer
+              </button>
+            </div>
+            <br />
+            <h1 class="py-2">Asset Balances</h1>
+            <div>
+              <h1 class="py-2 font-semibold mb-5">Asset</h1>
+              <div class="flex mb-5">
+                <div>
+                  <div class="w-10 h-10 bg-green-500 rounded-full"></div>
+                </div>
+                <div class="ml-5">
+                  <span class="uppercase font-semibold">Eth</span> <br />
+                  Ethereum
+                </div>
+              </div>
+              <div class="flex mb-5">
+                <div>
+                  <div class="w-10 h-10 bg-blue-500 rounded-full"></div>
+                </div>
+                <div class="ml-5">
+                  <span class="uppercase font-semibold">Btc</span> <br />
+                  Bitcoint
+                </div>
+              </div>
+              <div class="flex mb-5">
+                <div><div class="w-10 h-10 bg-white rounded-full"></div></div>
+                <div class="ml-5">
+                  <span class="uppercase font-semibold">Ltc</span> <br />
+                  Litecoinf
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Promo formulario -->
+        <div class="flex justify-center">
+          <div class="bg-[#75757550] w-full mt-5">
+            <form action="">
+              <div class="p-5 tracking-wider">
+                <h1 class="text-2xl font-semibold">Withdraw ETH</h1>
+                <div class="mt-3">
+                  <label class="uppercase text-sm font-semibold"
+                    >eth wallet address</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full p-2 my-2 bg-transparent text-white border"
+                    placeholder="... ... ..."
+                  />
+                </div>
+                <div class="mt-3 text-sm">
+                  Do not send ETH unies you are cortolli the destination
+                  supports ETHEREUM blablablabla if it blsbls not you could
+                  permanenty lose address it your coin.
+                </div>
+                <h5 class="mt-3 font font-semibold">
+                  [_] Save address for next time
+                </h5>
+                <div class="mt-3 bg-[#99999950] p-5">
+                  <div class="grid grid-cols-2">
+                    <label for="">Available</label>
+                    <label class="text-end text-num font font-semibold"
+                      >5.340000 ETH</label
+                    >
+                    <label for="">Balance</label>
+                    <label class="text-end text-num">$10,026.54</label>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <label class="uppercase text-sm font-semibold"
+                    >Amount to withdraw</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full p-2 my-2 bg-transparent text-white border"
+                    placeholder="5.34"
+                  />
+                  <p>$1,000,000.00 dolly withdraw of blabla blablablabla</p>
+                </div>
+                <div class="mt-3">
+                  <label class="uppercase text-sm font-semibold"
+                    >Withdraw fee</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full p-2 my-2 bg-transparent text-white border"
+                    placeholder="0.006 ETH"
+                  />
+                </div>
+                <div class="mt-3">
+                  <label class="uppercase text-sm font-semibold">Total</label>
+                  <input
+                    type="text"
+                    class="w-full p-2 my-2 bg-transparent text-white border"
+                    placeholder="ETH"
+                    value="5.334 ETH"
+                  />
+                </div>
+                <button
+                  class="mt-3 bg-[#ff5709b6] p-2 w-full font-semibold rounded-full"
+                >
+                  Withdraw
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!--Promo code -->
+        <div class="flex items-center h-screen p-2 md:p-0 md:col-span-2">
+          <div class="w-full bg-[#75757550xx]">
+            <h1 class="uppercase text-5xl text-blue-500 font-semibold">
+              Promo Code
+            </h1>
+            <h1 class="text-sm py-3">You increase your desposit and incomes</h1>
+            <form class="mt-10">
+              <div class="p-5 bg-[#75757550] rounded-2xl">
+                <h1 class="text-2xl font-semibold py-3">
+                  Type promo code below
+                </h1>
+                <h5 class="uppercase text-xs py-2 font-semibold">
+                  Your promo code
+                </h5>
+                <input
+                  class="w-full border p-2 bg-transparent text-white rounded-lg"
+                />
+              </div>
+              <button
+                class="uppercase text-sm border font-semibold p-3 px-8 tracking-wider mt-10 rounded-full"
+              >
+                Activate a promo code
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!--Promo SECTION4 -->
+        <div class="flex justify-center">
+          <div class="bg-[#75757550] w-full mt-5">section 4</div>
+        </div>
+
+        <!--Promo successfull -->
+        <div class="flex items-center p-2">
+          <div
+            class="bg-[#75757550] px-6 py-8 w-full rounded-xl flex flex-col items-center text-center"
+          >
+            <div class="w-10 h-10 rounded-full bg-purple-500"></div>
+            <div class="pt-5 text-purple-500">Seccessfull withdrawal</div>
+            <div class="">
+              Please wait for the funds to be credited to your wallet
+            </div>
+            <div class="w-full p-5 m-5 border border-gray-700">
+              <div class="my-5 grid grid-cols-2 text-start">
+                <h5 class="text-gray-400">Status</h5>
+                <h5 class="text-gray-400">Transaction ID</h5>
+                <h5 class="text-pink-500 font-semibold">Confirmed</h5>
+                <h5>boton</h5>
+              </div>
+              <h5>Contact online support for additional information</h5>
+            </div>
+            <button
+              type="button"
+              class="w-full rounded-full p-2 bg-[#ff5e00a6]"
+            >
+              Wallet
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>footer</footer>
+  </body>
+</html>
